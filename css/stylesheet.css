@@ -14,10 +14,6 @@ html, body {
 h1 {
     display: block;
     font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     font-weight: bold;
 }
 
@@ -25,6 +21,11 @@ h1 {
 .nav-wrapper {
     width: 100%;
     padding: 0;  
+}
+
+.main-page-content {
+    display: flex;
+    flex-direction: column;
 }
 
 .main-nav {
@@ -35,6 +36,12 @@ h1 {
     overflow: hidden;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     height: 72px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    
 }
 
 .main-nav h1 {
@@ -139,9 +146,7 @@ a .icon {
     flex-direction: row;
     align-items: center;
     justify-content: start;
-    height: 600px;
-    margin-left: 320px;
-    margin-right: 320px;
+    margin: 0px auto;
 }
 
 .content-1-title {
@@ -178,22 +183,18 @@ a .icon {
     flex-wrap: wrap;
 }
 
-.content-s1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-}
+
 
 
 .content-1-title div {
-    padding: 20px;
+  
 }
 
 .content-1-sub {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    flex-grow: 4;
+    
 }
 
 
@@ -296,6 +297,7 @@ a .icon {
 .card-wrapper {
     height: 100%;
     width: 95%;
+    max-width: 1200px;
     justify-content: center;
     display: flex;
 }
@@ -334,7 +336,6 @@ a .icon {
 #content-2 {
     display: flex;
     flex-direction: row;
-    margin: 0 300px 0 300px;
     justify-content: center;
 }
 
@@ -352,10 +353,6 @@ a .icon {
     justify-content: center;
     padding: 50px;
 }
-#content-3 {
-    margin: 0 300px 0 300px;
-}
-
 .content-3-block {
     display: flex;
     flex-direction: row;
@@ -384,37 +381,82 @@ a .icon {
 .block-section {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
     height: 50%;
-    margin-right: 54px;
-    min-width: 40%;
+    width: 40%;
 }
 
 
-@media screen and (max-width: 1200px) {
-        
-    .nav-wrapper {
-        min-width: 100%;
+/* For screen Sizes > 1200px */
+@media screen and (min-width: 1200px) {
+
+}
+
+/* For screen sizes at minimum width: 300px */
+@media screen and (min-width: 300px){
+    .nav-right {
+        white-space: nowrap;
+    }
+    .content-1-wrapper {
+      
+    }
+    .content-1-container.img_card {
+        width: 85%;
+        padding: 40px 0px;
+        align-items: flex-end;
+    }
+}
+
+
+/* For Screen sizes < 992px */
+@media screen and (max-width: 992px) {
+    /* Responsive Nav section */
+    .nav-right {
+        white-space: nowrap;
+    }
+    .nav-left {
+        margin-right: 10px;
+    }
+    .main-page-content {
+        justify-content: center;
     }
     .content-1-wrapper {
         display: block;
-        align-items: center;
+        align-items: center;  
+        margin: 0;
+    }
+    .content-1-title {
+        font-size: 45px;
+        max-width: 100%;
+        line-height: 1.1;
+        text-align: center;
+    }
+    .c-1-section p {
+        text-align: center;
+        margin: 0;
+    }
+    .btn-group .btn {
+        width: 120px;
     }
 
+    .content-1-container.img-card {
+        width: 50%;
+    }
     .content-bg-wrapper {
         min-width: 100%;
     }
     .content-2-wrapper {
         display: block;
+    
+    }
+
+    .card-wrapper {
+        flex-direction: column;
+        align-items: center;
     }
     .content-s1 {
-        display: block;
-        white-space: wrap;
         justify-content: center;
         align-items: center;
-        margin: 0;
-        padding: 0;
+        text-align: center;
     }
 
     #content-2 {
@@ -423,4 +465,18 @@ a .icon {
 
 
 }
+
+/* Sizes beyond large to Desktop base */
+@media screen and (min-width: 1600px){
+    .content-s1 {
+        width: 45%;
+        padding: 110px 20px 44px 30px;
+        align-items: flex-start;
+    }
+    .content-1-wrapper {
+        margin-left: 320px;
+        margin-right: 320px;
+    }
+}
+
 
