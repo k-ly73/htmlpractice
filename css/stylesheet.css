@@ -804,41 +804,45 @@ a .icon {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
-}
-
-.footer-bg {
     background-color:rgb(0, 108, 175);
-    min-height: 300px;
-    height: 100%;
-    width: 100%;
 }
 
 .footer-section-1 {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+    flex-flow: row wrap; 
     color: white;
-
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    border-bottom: 1px
+    solid rgba(229, 232, 235, 0.25);
 }
 
 .footer-half-section {
-    padding: 10px;
-    width: 35%;
+    width: 50%;
+
+}
+
+.footer-half-section.section-divide-left {
+    padding-top: 20px;
+    padding-left: 40px;
+}
+.footer-half-section.section-divide-right {
+    padding-top: 20px;
+    padding-right: 40px;
 }
 
 .footer-flex-column {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.footer-section-group {
     text-align: left;
- 
 }
+
 
 .footer-content-title {
 
@@ -846,6 +850,9 @@ a .icon {
 
 .footer-content-description {
 
+}
+.f-section-item {
+    padding-top: 20px;
 }
 
 .footer-sub-wrapper {
@@ -857,8 +864,6 @@ a .icon {
     background-color: rgb(12, 123, 226);
     border: none;
     color: white;
-    width: 100%;
-    
     text-decoration: none;
     display: inline-block; 
     text-align: center;
@@ -877,9 +882,7 @@ a .icon {
     font-size: 15px;
 }
 
-.f-section-item {
-    padding-top: 20px;
-}
+
 
 /*************************************************************************************************************************************/
 /**************************************************** For screen Sizes > 1000px ******************************************************/
