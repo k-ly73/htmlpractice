@@ -900,9 +900,15 @@ a .icon {
     padding-top: 10px;
 }
 
+.footer-nav-container {
+    flex-wrap: wrap;
+}
+.footer-nav-item {
+    width: 100%;
+}
 
 .footer-2-nav-block {
-    width: 75%;
+    width: 100%;
 }
 .logo-image-white img {
     height: 50px;
@@ -1093,11 +1099,9 @@ a .icon {
     }
 
     .footer-nav-container {
+        flex-wrap: wrap;
         width: 100%;
         padding-left: 0;
-    }
-    .footer-nav-section {
-        flex-wrap: wrap;
     }
 }
 
