@@ -14,7 +14,6 @@ html, body {
     overflow-x: hidden;
 }
 
-
 h1 {
     display: block;
     font-size: 2em;
@@ -137,7 +136,7 @@ ul {
 li {
     display: inline-block;
     padding: 20px;
-    margin: 0;
+   
 }
 
 .main-nav a {
@@ -176,6 +175,8 @@ a .icon {
     display: flex;
     flex-direction: column;
     z-index: 2;
+    height: 100%;
+    margin-bottom: -50px;
 
 }
 
@@ -813,7 +814,7 @@ a .icon {
     background-color:rgb(0, 108, 175);
 }
 
-.footer-section-1 {
+.footer-section {
     display: flex;
     flex-flow: row wrap; 
     color: white;
@@ -852,7 +853,7 @@ a .icon {
 
 }
 .f-section-item {
-    padding-top: 20px;
+    padding-top: 12px;
 }
 
 .footer-sub-wrapper {
@@ -860,7 +861,10 @@ a .icon {
     display: flex;
     min-width: 33%;
 }
-.footer-sub-wrapper .btn-blu {
+.btn-group-footer {
+    padding-right: 20px;
+}
+.btn-group-footer .btn-blu {
     background-color: rgb(12, 123, 226);
     border: none;
     color: white;
@@ -871,19 +875,66 @@ a .icon {
 .footer-sub-wrapper .btn-blu.btn {
     margin: 0;
 }
+
+.footer-section-title {
+    font-size: 20px;
+}
+
+.f-section-item p {
+    font-weight: normal;
+}
 .footer-subscription {
     border: 1px solid rgb(201, 200, 200);
     border-radius: 10px;
+    max-width: 100%;
+    width: 450px;
     height: 50px;
-    width: 80%;
-    padding: 2px 25px 2px 30px;
+    padding: 2px 20px 2px 7px;
     outline: 0;
     font-weight: 400;
     font-size: 15px;
 }
 
+/**Footer section 2*/
+
+.footer-2-block {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-top: 20px;
+}
+.footer-2-block div {
+    padding-top: 10px;
+}
 
 
+.logo-image-white img {
+    height: 50px;
+    width: 50px;
+}
+
+.footer-nav-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-top: 40px;
+    align-items: flex-start;
+    padding-left: 72px;
+}
+
+.footer-nav-section {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+}
+
+.footer-nav-section h2 {
+    font-size: 15px;
+}
+.footer-nav-section p {
+    padding-top: 10px;
+    font-size: 15px;
+}
 /*************************************************************************************************************************************/
 /**************************************************** For screen Sizes > 1000px ******************************************************/
 /*************************************************************************************************************************************/
@@ -954,6 +1005,7 @@ a .icon {
         margin-right: 10px;
     }
     .main-page-content {
+        
         justify-content: center;
     }
     .content-1-wrapper {
