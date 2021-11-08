@@ -816,7 +816,7 @@ a .icon {
 
 .footer-section {
     display: flex;
-    flex-flow: row wrap; 
+    justify-content: space-between;
     color: white;
     padding-bottom: 40px;
     margin-bottom: 20px;
@@ -828,6 +828,7 @@ a .icon {
     width: 50%;
 
 }
+
 
 .footer-half-section.section-divide-left {
     padding-top: 20px;
@@ -844,14 +845,6 @@ a .icon {
     text-align: left;
 }
 
-
-.footer-content-title {
-
-}
-
-.footer-content-description {
-
-}
 .f-section-item {
     padding-top: 12px;
 }
@@ -908,6 +901,9 @@ a .icon {
 }
 
 
+.footer-2-nav-block {
+    width: 75%;
+}
 .logo-image-white img {
     height: 50px;
     width: 50px;
@@ -925,7 +921,6 @@ a .icon {
 .footer-nav-section {
     display: flex;
     flex-direction: column;
-    padding-right: 30px;
 }
 
 .footer-nav-section h2 {
@@ -1059,8 +1054,51 @@ a .icon {
         justify-content: center;
         width: 100%;
     }
-    
 
+    #footer-section-1 {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        justify-content: center;
+      
+    }
+    .footer-flex-column {
+        text-align: center;
+    }
+    .footer-half-section.section-divide-left {
+        padding: 0;
+    }
+    .footer-half-section.section-divide-right {
+        padding: 0;
+    }
+    .footer-half-section {
+        width: 100%;
+    }
+    .footer-sub-wrapper {
+        justify-content: center;
+    }
+    #footer-section-2.footer-section {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-2-block {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-2-nav-block {
+        width: 100%;
+    }
+
+    .footer-nav-container {
+        width: 100%;
+        padding-left: 0;
+    }
+    .footer-nav-section {
+        flex-wrap: wrap;
+    }
 }
 
 /**************************************************************************************************************************************/
